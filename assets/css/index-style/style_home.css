@@ -1,0 +1,253 @@
+/**************************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.introduction_section {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+
+.introduction_section::before{
+    position: absolute;
+    content: '';
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    left: -6%;
+    top: 50%;
+    background: linear-gradient(45deg,#0688f2,rgb(8, 255, 17));
+    animation: object1 15s linear infinite;
+    transition: 10s;
+
+}
+
+@keyframes object1 {
+    10%{
+        background: linear-gradient(45deg,#0688f2,rgb(249, 245, 2));
+        transform: rotate(100deg); 
+        top: 45%;  
+       
+    }
+    20%{
+        background: linear-gradient(45deg,#2091ed,rgb(235, 232, 36));
+        transform: rotate(-100deg);   
+        
+    }
+    30%{
+        background: linear-gradient(45deg,rgb(217, 214, 60),#41a3f2);
+        transform: rotate(100deg);   
+        
+    }
+    40%{
+        background: linear-gradient(45deg,#329ef5,rgb(65, 221, 60));
+        transform: rotate(-100deg);   
+       
+    }
+    50%{
+        background: linear-gradient(45deg,rgb(217, 214, 60),#41a3f2);
+        transform: rotate(100deg);   
+        
+    }
+    60%{
+        background: linear-gradient(45deg,#2091ed,rgb(235, 232, 36));
+        transform: rotate(-100deg); 
+        
+    }
+    90%{
+        background: linear-gradient(45deg,#0688f2,rgb(249, 245, 2));
+        transform: rotate(100deg);   
+        top: 50%;  
+    }
+    
+}
+
+.introduction_section::after{
+    position: absolute;
+    content: '';
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    left: 40%;
+    top: 12%;
+    background: linear-gradient(45deg,#0688f2,rgb(8, 255, 17));
+    animation: object2 15s linear infinite;
+    transition: 10s;
+
+}
+
+@keyframes object2 {
+    10%{
+        background: linear-gradient(45deg,#0688f2,rgb(249, 245, 2));
+        transform: rotate(100deg);  
+        left: 41%;
+        top: 10%;
+       
+    }
+    20%{
+        background: linear-gradient(45deg,#2091ed,rgb(235, 232, 36));
+        transform: rotate(-100deg);   
+        
+    }
+    30%{
+        background: linear-gradient(45deg,rgb(217, 214, 60),#41a3f2);
+        transform: rotate(100deg);   
+        
+    }
+    40%{
+        background: linear-gradient(45deg,#329ef5,rgb(65, 221, 60));
+        transform: rotate(-100deg);   
+        left: 40%;
+    }
+    50%{
+        background: linear-gradient(45deg,rgb(217, 214, 60),#41a3f2);
+        transform: rotate(100deg);   
+        
+    }
+    60%{
+        background: linear-gradient(45deg,#2091ed,rgb(235, 232, 36));
+        transform: rotate(-100deg); 
+        
+    }
+    90%{
+        background: linear-gradient(45deg,#0688f2,rgb(249, 245, 2));
+        transform: rotate(100deg);   
+        left: 31%;
+        top: 30%;
+    }
+    
+}
+
+.cols{
+    padding-top: 0px;
+    width: 50%;
+}
+
+.cols0{
+    z-index: 5;
+}
+
+.topline{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: #3d535f;
+}
+
+.topline::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #7f00ff;
+}
+
+h1{
+    margin: 0;
+    display: block;
+    font-size: 7em;
+    font-weight: 900;
+    color: #3d535f;
+}
+
+.multiText{
+    color: #7f00ff;
+    text-transform: capitalize;
+}
+
+p{
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+    color: #3d535f;
+}
+
+.introduction_btn{
+    width: 100%;
+    position: relative;
+    left: 150px;
+}
+
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #3d535f;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+}
+
+button:hover{
+    background-color: #7f00ff;
+}
+
+.imgbox{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+#splash1{
+    border-radius: 50%;
+}
+
+.imgbox img{
+    position: relative;
+    height: 100%;
+    width: calc(130% - 80px);
+    left: 200px;
+    animation: animateUser 5s linear infinite;
+    transform: scale(1);
+    
+}
+
+@keyframes animateUser {
+    50%{
+        transform: scale(1.05);
+    }
+    
+}
+
+#splash{
+    position: absolute;
+    transform: scale(1.5);
+    width: 600px;
+    left: 60px;
+    filter: saturate(200%);
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    50%{
+        transform: scale(1.4) rotate(-60deg);
+        
+       
+    }
+    
+}
+
+/*****************************************************/

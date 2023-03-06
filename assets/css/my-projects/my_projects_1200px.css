@@ -1,0 +1,10 @@
+@media only screen and (min-width: 1000px) {
+
+    .project-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 100px; /**********************Done*/
+        
+      }
+      
+}
