@@ -48,6 +48,10 @@
         justify-items: center;
     }
 
+    .about-img {
+       background-image: url(../../img/cv01-new.png) ;
+    }
+
     .circles {
         position: absolute;
         top: 0;

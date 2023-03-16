@@ -6,7 +6,7 @@
         top: 0;
         opacity: 0;
         transition: 1s;
-        padding: 92px 20px;
+        padding: 75px 27px 0px 20px;
         height: 100vh;
         grid-template-columns: 100%;
         gap: 50px;
