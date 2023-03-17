@@ -1,0 +1,218 @@
+        body {
+        width: 100%;
+        max-width: 1400px;
+        display: block;
+        margin: auto;
+        min-height: 100vh;
+        background: rgb(255, 255, 255);
+        font-family: sans-serif;
+    }
+
+    header.abajo ul li a {
+        margin: 2px;
+        color: rgb(255, 255, 255);
+        top: 0px;
+    }
+
+    body {
+        width: 100%;
+        /* max-width: 1080px; */
+        display: block;
+        margin: auto;
+        min-height: 100vh;
+        background: rgb(255, 255, 255); /*color del background*/
+        font-family: sans-serif;
+    }
+
+    .About-section.active {
+        position: relative;
+        opacity: 1;
+        z-index: 8;
+    }
+
+    .About-section {
+        width: 100%;
+        min-height: 100vh;
+        padding: 30px 0px 0; 
+        position: fixed;
+        top: 0;
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .skill-img {
+        display: block;
+        margin: auto;
+        height: 80px;
+        filter: grayscale(0%);
+        transition: 1s;
+        animation: none;
+    }
+
+    .about {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 0.1fr 1fr;
+        grid-gap: 40px;
+    }
+    
+    .about-img-container {
+        position: relative;
+        place-self: center;
+        width: 250px;
+        height: 300px;
+        border-radius: 150px;
+    }
+
+    .about-img-container {
+        position: relative;
+        place-self: center;
+    }
+
+    .about-img {
+        width: 150px;
+        height: 285px;
+        object-fit: cover;
+        border-radius: 20px;
+        margin: -1px 50px;
+    }
+
+    skill-container {
+        width: 95%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 40px;
+        color: #000000;
+    }
+    .skill-card{
+        margin-bottom: 40px;
+    }
+
+    .card:nth-child(even) {
+        margin-left: 0;
+    }
+
+    .card {
+        width: 97%;
+        padding: 30px;
+        border-radius: 50px;
+        color: #090909;
+        display: block;
+        margin: 25px 0;
+        position: relative;
+        background: #f00;
+    }
+
+    .card:nth-child(even):before {
+        content: "";
+        position: absolute;
+        left: -17%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        border: 5px solid #000000;
+        border-radius: 50%;
+    }
+
+    .card:nth-child(1n) .card-body:before {
+        content: '';
+        position: absolute;
+        left: -8%;
+        top: 0;
+        width: 0px;
+        height: 106%;
+        border: 1px dashed #000000;
+        z-index: -1;
+    }
+
+
+    .card-body h4 {
+        background-color: #4c8297;
+        height: 47px;
+        border-radius: 50px 50px;
+        padding: 6px 40px;
+        text-align: center;
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .card:nth-child(odd):before {
+        content: "";
+        position: absolute;
+        left: -17%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        border: 5px solid #191919;
+        border-radius: 50%;
+    }
+
+    .card:nth-child(odd):after {
+        content: "";
+        position: absolute;
+        left: -8.5%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 7%;
+        height: 2px;
+        background: #000000;
+        z-index: -1;
+    }
+    
+    .circles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .lang-img {
+            display: block;
+            margin: auto;
+            height: 200px;
+            filter: grayscale(0%);
+            transition: 1s;
+    }
+
+    
+
+    .skill-card {
+        position: relative;
+        margin: 60px;
+    }
+
+
+    .skill-name {
+        font-size: 30px;
+        font-weight: 300;
+        text-align: center;
+        text-transform: capitalize;
+        margin: 10px 0 10px;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 60px;
+        color: #000000;
+        text-transform: capitalize;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+
+    .skill-section {
+        position: relative;
+        /* margin: 100px 0; */
+        z-index: 13;
+    }
+    
+    .border-flag{
+        border: black solid 1px;
+    }
+

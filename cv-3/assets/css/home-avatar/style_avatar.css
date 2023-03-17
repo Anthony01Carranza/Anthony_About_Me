@@ -1,0 +1,445 @@
+
+  .box {
+    position: absolute;
+    width: 400px; /**cambiar tamaño***/
+    height: 400px; /**cambiar tamaño***/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(50% at 50% 50%);
+  }
+  .box::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0%;
+    background: linear-gradient(rgb(217, 214, 60),#2091ed);
+    animation: animate 4s linear infinite;
+  }
+  .box::after {
+  
+    content: "";
+    position: absolute;
+    inset: 35px;
+    background-image: url(../../img/avatar.png); /*imagen */
+    background-repeat: no-repeat;
+    background-size: 350px;
+    border-radius: 25px;
+    clip-path: circle(50% at 50% 50%);
+    z-index: 1;
+  }
+  
+  .box-1 {
+    /*position: absolute;*/
+    margin-left: 100px;
+    width: 400px; /**cambiar tamaño***/
+    height: 400px; /**cambiar tamaño***/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    clip-path: circle(50% at 50% 50%);
+  }
+  .box-1::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 140%;
+    background: linear-gradient(#00E1FD,#7f00ff);
+    animation: animate1 4s linear infinite;
+  }
+  .box-1::after {
+    content: "";
+    position: absolute;
+    border-radius: 16px;
+    clip-path: circle(50% at 50% 50%);
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .box h2 {
+    color: #fff;
+    font-size: 10em;
+    position: relative;
+    z-index: 10;
+  }
+  
+  @keyframes animate1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  /*.img {
+    width: auto;
+    height: auto;
+  }*/
+  box-picture {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: -110;
+  }
+  
+  .box-2 {
+    position: absolute;
+    width: 400px; /**cambiar tamaño***/
+    height: 400px; /**cambiar tamaño***/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(50% at 50% 50%);
+  }
+
+  .box-2::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 140%;
+    background: linear-gradient(#00E1FD, #7f00ff);
+    animation: animate 4s linear infinite;
+  }
+  
+  .box-2::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    background: linear-gradient(45deg,#0688f2,rgb(8, 255, 17)); /**cambiar color de fondo abajo de imagen***/
+    animation: object3 15s linear infinite;
+    transition: 10s; 
+    border-radius: 16px;
+    clip-path: circle(50% at 50% 50%);
+    z-index: 1;
+  }
+  
+  .box-3 {
+    position: absolute;
+    width: 400px; /**cambiar tamaño***/
+    height: 400px; /**cambiar tamaño***/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(50% at 50% 50%);
+  }
+  
+  .box-3::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    border-radius: 16px;
+    clip-path: circle(50% at 50% 50%);
+  }
+  
+  @keyframes animate3 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+  @keyframes object3 {
+    10%{
+        background: linear-gradient(45deg,#0688f2,rgb(249, 245, 2));
+        transform: rotate(100deg);  
+       
+    }
+    20%{
+        background: linear-gradient(45deg,#2091ed,rgb(235, 232, 36));
+        transform: rotate(-100deg);   
+        
+    }
+    30%{
+        background: linear-gradient(45deg,rgb(217, 214, 60),#41a3f2);
+        transform: rotate(100deg);   
+        
+    }
+    40%{
+        background: linear-gradient(45deg,#329ef5,rgb(65, 221, 60));
+        transform: rotate(-100deg);   
+       
+    }
+    50%{
+        background: linear-gradient(45deg,rgb(217, 214, 60),#41a3f2);
+        transform: rotate(100deg);   
+        
+    }
+    60%{
+        background: linear-gradient(45deg,#2091ed,rgb(235, 232, 36));
+        transform: rotate(-100deg); 
+        
+    }
+    90%{
+        background: linear-gradient(45deg,#0688f2,rgb(249, 245, 2));
+        transform: rotate(100deg);  
+    }
+    
+} 
+
+@media only screen and (max-width: 361px) {
+
+  .box {
+    width: 200px; /**cambiar tamaño***/
+    height: 200px; /**cambiar tamaño***/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(50% at 50% 50%);
+  }
+
+  .box::after {
+    content: "";
+    inset: 0px;
+    background-image: url(../../img/avatar.png);
+    background-repeat: no-repeat;
+    background-size: 230px;
+    border-radius: 25px;
+    clip-path: circle(48% at 50% 50%);
+    z-index: 1;
+  }
+
+  .box-1 {
+ 
+    width: 200px; /**cambiar tamaño***/
+    height: 200px; /**cambiar tamaño***/
+    display: flex;
+    margin-left: 115px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    clip-path: circle(50% at 50% 50%);
+  }
+
+  .box-2 {
+    position: absolute;
+    width: 200px; /**cambiar tamaño***/
+    height: 200px; /**cambiar tamaño***/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(50% at 50% 50%);
+  }
+
+  .box-3 {
+    width: 200px; /**cambiar tamaño***/
+    height: 200px; /**cambiar tamaño***/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(50% at 50% 50%);
+  }
+/* para cambiar dimenciones del borde animado box-2 box-1 Before*/
+  .box-2::before {
+    content: "";
+    width:0px;
+    height:0%;
+    background: linear-gradient(#00E1FD, #7f00ff);
+    animation: animate 4s linear infinite;
+  }
+
+  .box-1::before {
+    content: "";
+    width: 80px;
+    height: 35%;
+    background: linear-gradient(#00E1FD,#7f00ff);
+    animation: animate1 4s linear infinite;
+  }
+
+  .box::before {
+    content: "";
+    width: 80px;
+    height: 100%;
+    background: linear-gradient(#00E1FD,#7f00ff);
+    animation: animate3 4s linear infinite;
+  }
+
+  /*end */
+
+  
+}
+/*******************MEDIA GUERY 2 IPHONE****************************/
+
+@media only screen and (min-width: 362px) and ( max-width: 421px)  {
+
+
+  .box {
+    width: 250px; /**cambiar tamaño***/
+    height: 250px; /**cambiar tamaño***/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(50% at 50% 50%);
+  }
+
+  .box::after {
+    content: "";
+    inset: 10px;
+    background-image: url(../../img/avatar.png);
+    background-repeat: no-repeat;
+    background-size: 230px;
+    border-radius: 25px;
+    clip-path: circle(48% at 50% 50%);
+    z-index: 1;
+  }
+
+  .box-1 {
+ 
+    width: 250px; /**cambiar tamaño***/
+    height: 250px; /**cambiar tamaño***/
+    display: flex;
+    margin-left: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    clip-path: circle(50% at 50% 50%);
+  }
+
+  .box-2 {
+    position: absolute;
+    width: 250px; /**cambiar tamaño***/
+    height: 250px; /**cambiar tamaño***/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(50% at 50% 50%);
+  }
+
+  .box-3 {
+    width: 250px; /**cambiar tamaño***/
+    height: 250px; /**cambiar tamaño***/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(50% at 50% 50%);
+  }
+/* para cambiar dimenciones del borde animado box-2 box-1 Before*/
+  .box-2::before {
+    content: "";
+    width:0px;
+    height:0%;
+    background: linear-gradient(#00E1FD, #7f00ff);
+    animation: animate 4s linear infinite;
+  }
+
+  .box-1::before {
+    content: "";
+    width: 80px;
+    height: 30%;
+    background: linear-gradient(#00E1FD,#7f00ff);
+    animation: animate1 4s linear infinite;
+  }
+
+  .box::before {
+    content: "";
+    width: 80px;
+    height: 100%;
+    background: linear-gradient(#00E1FD,#7f00ff);
+    animation: animate3 4s linear infinite;
+  }
+
+  /*end */
+
+  
+}
+
+
+@media only screen and (min-width: 422px) and ( max-width: 821px)  {
+
+
+
+
+
+  .box::after {
+    content: "";
+    inset: 30px;
+    background-image: url(../../img/avatar.png);
+    background-repeat: no-repeat;
+    background-size: 330px;
+    border-radius: 25px;
+    clip-path: circle(48% at 50% 50%);
+    z-index: 1;
+  }
+
+  .box-1 {
+    margin-left: 156px;
+    width: 380px; /**cambiar tamaño***/ 
+    height: 380px; /**cambiar tamaño***/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    clip-path: circle(50% at 50% 50%);
+  }
+
+  .box-1::before {
+    content: "";
+    width: 250px;
+    height: 42%;
+    background: linear-gradient(#00E1FD,#7f00ff);
+    animation: animate1 4s linear infinite;
+  }  
+
+  .box-2 {
+    position: absolute;
+    width: 380px; /**cambiar tamaño***/ 
+    height: 380px; /**cambiar tamaño***/ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(50% at 50% 50%);
+  }
+
+  .box-3 {
+    width: 380px; /**cambiar tamaño***/ 
+    height: 380px; /**cambiar tamaño***/ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(50% at 50% 50%);
+  }
+/* para cambiar dimenciones del borde animado box-2 box-1 Before*/ 
+
+  .box-2::before {
+    content: "";
+    width:0px;
+    height: 0%;
+    background: linear-gradient(#00E1FD, #7f00ff);
+    animation: animate 4s linear infinite;
+  }
+
+  .box-1::before {
+    content: "";
+    width: 300px;
+    height: 41%;
+    background: linear-gradient(#00E1FD,#7f00ff);
+    animation: animate1 4s linear infinite;
+  }
+
+  .box::before {
+    content: "";
+    width: 0px;
+    height: 0%;
+    background: linear-gradient(#00E1FD,#7f00ff);
+    animation: none;
+  }
+
+  /*end */
+
+  
+
+
+
+}
