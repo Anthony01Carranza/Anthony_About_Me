@@ -227,6 +227,7 @@
   .selected-lang {
     display: flex;
     padding: 0px 0px 0px 16px;
+    gap: 10px;
 }
 
   a{

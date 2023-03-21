@@ -56,6 +56,7 @@ body{
     left: 0;
     object-fit: cover;
     transition: 0.5s;
+    border-radius: 60px;
   }
   
   .project-description {
@@ -72,6 +73,14 @@ body{
     text-align: center;
     font-weight: 300;
   }
+
+  .project-title-p2 {
+    font-size: 50px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 300;
+    color: black;
+}
   
   .project-info {
     margin: 40px;
@@ -79,6 +88,14 @@ body{
     line-height: 30px;
     text-align: center;
   }
+
+  .project-info-p2 {
+    margin: 40px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+}
   
   .project-btn-grp {
     display: grid;
@@ -89,19 +106,23 @@ body{
   
   .project-btn {
     height: 40px;
+    text-align: center;
     text-transform: capitalize;
     font-size: 18px;
     border: none;
     background: #000;
     color: #fff;
     cursor: pointer;
+    border-radius: 35px;
   }
 
 
   
   .project-btn.live {
-    background: none;
-    border: 2px solid #fff;
+    background: black;
+    /*border: 2px solid #fff;*/
+    color: white;
+    border-radius: 35px;
   }
   
   .project-card:hover .project-img {
