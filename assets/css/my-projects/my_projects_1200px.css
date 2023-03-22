@@ -2,7 +2,7 @@
 
     .project-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 50% 50%;
         row-gap: 100px; /**********************Done*/
         
       }
@@ -22,6 +22,16 @@
         display: inline-block;
         font-size: 95px;
     }
+
+    .project-section {
+      width: 100%;
+      min-height: 100vh;
+      padding: 55px 14px 100px;
+      position: fixed;
+      top: 0;
+      transition: 1s;
+      opacity: 0;
+  }
     
       
 }

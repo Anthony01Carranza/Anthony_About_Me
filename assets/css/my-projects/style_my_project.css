@@ -69,14 +69,14 @@ body{
   
   .project-title {
     font-size: 50px;
-    text-transform: capitalize;
+    /*text-transform: capitalize;*/
     text-align: center;
     font-weight: 300;
   }
 
   .project-title-p2 {
     font-size: 50px;
-    text-transform: capitalize;
+    /*text-transform: capitalize;*/
     text-align: center;
     font-weight: 300;
     color: black;

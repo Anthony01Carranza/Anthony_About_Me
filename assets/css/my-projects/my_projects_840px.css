@@ -2,7 +2,7 @@
 
     .project-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 50% 50%;
         row-gap: 100px; /**********************Done*/ 
       }
 
@@ -30,7 +30,7 @@
     .project-section {
         width: 100%;
         min-height: 100vh;
-        padding: 97px 14px 100px;
+        padding: 55px 14px 100px;
         position: fixed;
         top: 0;
         transition: 1s;
@@ -53,5 +53,21 @@
       font-size: 90px;
   }
 
+  
+  .project-title-p2 {
+    font-size: 36px;
+/* text-transform: capitalize; */
+text-align: center;
+font-weight: 300;
+color: black;
+line-height: 30px;
+}
+
+.project-title {
+  font-size: 36px;
+  /* text-transform: capitalize; */
+  text-align: center;
+  font-weight: 300;
+}
     
 }
