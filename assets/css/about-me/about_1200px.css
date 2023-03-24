@@ -1,0 +1,16 @@
+@media only screen and (min-width: 1000px) {
+
+.last_skill-card {
+     grid-area: 2 / 3 / 3 / 3; 
+}
+
+.skill-container {
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    color: #000000;
+}
+
+}

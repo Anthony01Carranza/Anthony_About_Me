@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100%;
+    max-width: 1400px;
+    display: block;
+    margin: auto;
+    min-height: 100vh;
+    background: #4e54c8;  /***best #4e54c8 cambio***/ 
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    font-family: sans-serif;
+  }
+
+  .contact-section.active {
+    position: relative;
+    opacity: 1;
+    z-index: 8;
+  }
+
+
+/****** contact section**************/
+.contact-section{
+    display: grid;
+    position: absolute;;
+    top:0;
+    opacity: 0;
+    transition: 1s;
+    padding: 100px 150px;
+    height: 100vh;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px; /**********************Done*/
+}
+
+.contact-form{
+    z-index: 11;
+}
+
+.contact-form input, .contact-form textarea{ /**investigar textarea*/
+    width:100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #000000; /******************/
+    margin-bottom: 30px;
+    border-radius: 5px;
+    
+    color: #000000;
+    padding: 5px 10px;
+    
+}
+
+::placeholder{ /*** investigar**/
+    color: #000000; /**/
+}
+
+#msg{
+    height: 280px;
+    resize: none; /**investigar**/
+    font-family: sans-serif;
+}
+
+.form-submit-btn{
+    background: #ff4f4f;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 15px 40px;
+    display: block;
+    margin: 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.logo_share{
+  margin: 10px auto ;
+  width: auto;
+  height: 50px;
+
+  
+}
+
+.data_to_share{
+    width: 100%;
+    height: 84%;
+    padding: 10px;
+    background-color: rgba(225, 225, 225, 0.3);
+    backdrop-filter: saturate(5px) ;
+    border: solid 1px rgba(225, 225, 225, 0.5);
+    border-radius: 10px;
+    z-index: 10;
+    display: grid;
+    grid-template-rows: 0.3fr 0.3fr 1fr ;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    place-items: center;
+
+}
+
+.animate-charcter {
+  text-transform: uppercase;
+ background-image: linear-gradient(
+   -225deg,
+   #8bffff 0%,
+   #8f71ff 50%,
+   #8bffff 100%
+ );/** #231557 0%,
+ #44107a 29%,
+ #ff1361 67%,
+ #fff800 100%
+ */
+ background-size: auto auto;
+ background-clip: border-box;
+ background-size: 200% auto;
+ color: #fff;
+ background-clip: text;
+ text-fill-color: transparent;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ animation: textanimation 3s linear infinite;
+ display: inline-block;
+ font-size: 130px;  /***cambiar tamaño***/
+}
+
+
+.data_to_share p{
+    grid-area: 2/1/3/4;
+    background-color: #0079A8;
+    height: 30px;
+    border-radius: 50px 50px;
+    padding: 7px 40px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.data_to_share iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    grid-area: 3/1/4/4;
+}
+
+/**************ANIMATE TEXT**********************/
+
+.text_style{
+    display: grid;
+    justify-content: center;
+    grid-area: 1/1/2/3;
+
+}
+
+
+
+@keyframes textanimation {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/*********************back animation*******************************/
+

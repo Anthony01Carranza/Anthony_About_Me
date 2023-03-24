@@ -1,0 +1,185 @@
+
+@media only screen and (max-width: 361px) {
+
+    body{
+      width: 360px;
+    }
+  
+    .introduction_section {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100vw;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      padding: 0 10%;
+      overflow: none;
+      }
+  
+      .introduction_section::after{
+          position: absolute;
+          content: '';
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+          left: 10%;
+          top: 12%;
+          background: linear-gradient(45deg,#0688f2,rgb(8, 255, 17));
+          animation: object2 15s linear infinite;
+          transition: 10s;
+      }
+  
+      .introduction_section::before{
+          position: absolute;
+          content: '';
+          height: 280px;
+          width: 280px;
+          border-radius: 50%;
+          left: -16%;
+          background: linear-gradient(45deg,#0688f2,rgb(8, 255, 17));
+          animation: object1 15s linear infinite;
+          transition: 10s;
+      
+      }
+  
+  /***********key frames**********/
+  
+  @keyframes object1 {
+      10%{
+          background: linear-gradient(45deg,#0688f2,rgb(249, 245, 2));
+          transform: rotate(100deg); 
+      }
+      20%{
+          background: linear-gradient(45deg,#2091ed,rgb(235, 232, 36));
+          transform: rotate(-100deg);   
+          
+      }
+      30%{
+          background: linear-gradient(45deg,rgb(217, 214, 60),#41a3f2);
+          transform: rotate(100deg);   
+          
+      }
+      40%{
+          background: linear-gradient(45deg,#329ef5,rgb(65, 221, 60));
+          transform: rotate(-100deg);         
+      }
+      50%{
+          background: linear-gradient(45deg,rgb(217, 214, 60),#41a3f2);
+          transform: rotate(100deg);   
+          
+      }
+      60%{
+          background: linear-gradient(45deg,#2091ed,rgb(235, 232, 36));
+          transform: rotate(-100deg); 
+          
+      }
+      90%{
+          background: linear-gradient(45deg,#0688f2,rgb(249, 245, 2));
+          transform: rotate(100deg);           
+      }
+      
+  }
+  
+  
+  @keyframes object2 {
+      10%{
+          background: linear-gradient(45deg,#0688f2,rgb(249, 245, 2));
+          transform: rotate(100deg);      
+      }
+      20%{
+          background: linear-gradient(45deg,#2091ed,rgb(235, 232, 36));
+          transform: rotate(-100deg);   
+          
+      }
+      30%{
+          background: linear-gradient(45deg,rgb(217, 214, 60),#41a3f2);
+          transform: rotate(100deg);   
+          
+      }
+      40%{
+          background: linear-gradient(45deg,#329ef5,rgb(65, 221, 60));
+          transform: rotate(-100deg);   
+      }
+      50%{
+          background: linear-gradient(45deg,rgb(217, 214, 60),#41a3f2);
+          transform: rotate(100deg);   
+          
+      }
+      60%{
+          background: linear-gradient(45deg,#2091ed,rgb(235, 232, 36));
+          transform: rotate(-100deg); 
+          
+      }
+      90%{
+          background: linear-gradient(45deg,#0688f2,rgb(249, 245, 2));
+          transform: rotate(100deg);   
+      }
+      
+  }
+  
+  
+  @keyframes animateUser {
+      0%{
+          transform: none;
+      }
+  
+      100%{
+          transform: none;
+      }
+      
+  }
+  
+  
+  @keyframes animate {
+      0%{
+          transform: none; 
+      }
+      100%{
+          transform: none; 
+      }
+  }
+  
+  /**********************End Key Frame***********************/
+  .cols{
+      width: 120%;
+  }
+  
+  .cols0{
+      z-index: 5;
+  }
+  
+  p{
+      display: block;
+      width: 80%;
+      font-size: 1.6em;
+      color: #3d535f;
+  }
+  
+  h1{
+      margin: 0;
+      display: block;
+      font-size: 2.5em;
+      font-weight: 900;
+      color: #3d535f;
+      z-index: 10;
+  }
+  
+  .multiText{
+      color: #7f00ff;
+      text-transform: capitalize;
+  }
+  
+  .imgbox img{
+      position: relative;
+      height: 300px;
+      width: 297px;
+      left: 5px;
+      animation: animateUser 5s linear infinite;
+      transform: scale(1);
+      z-index: 5;
+  }
+  
+  
+  
+  /***************************************************/
+  }

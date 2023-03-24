@@ -1,0 +1,53 @@
+@media only screen and (min-width: 1000px) {
+
+    .project-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        row-gap: 100px; /**********************Done*/
+        
+      }
+
+      .animate-charcter {
+        text-transform: uppercase;
+        background-image: linear-gradient( -225deg, #8bffff 0%, #8f71ff 50%, #8bffff 100% );
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textanimation 3s linear infinite;
+        display: inline-block;
+        font-size: 95px;
+    }
+
+    .animate-charcter-es {
+      text-transform: uppercase;
+      background-image: linear-gradient( -225deg, #8bffff 0%, #8f71ff 50%, #8bffff 100% );
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textanimation 3s linear infinite;
+      display: inline-block;
+      font-size: 95px;
+  }
+
+    .project-section {
+      width: 100%;
+      min-height: 100vh;
+      padding: 55px 14px 100px;
+      position: fixed;
+      top: 0;
+      transition: 1s;
+      opacity: 0;
+  }
+    
+      
+}
