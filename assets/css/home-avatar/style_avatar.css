@@ -189,7 +189,7 @@
     
 } 
 
-@media only screen and (max-width: 361px) {
+@media only screen and (max-width: 395px) {
 
   .box {
     width: 200px; /**cambiar tamaño***/
@@ -300,7 +300,7 @@
     width: 250px; /**cambiar tamaño***/
     height: 250px; /**cambiar tamaño***/
     display: flex;
-    margin-left: 35px;
+    margin-left: 55px;
     justify-content: center;
     align-items: center;
     border-radius: 25px;
