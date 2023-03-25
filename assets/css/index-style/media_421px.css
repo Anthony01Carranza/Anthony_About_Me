@@ -29,8 +29,8 @@
       .introduction_section::before{
           position: absolute;
           content: '';
-          height: 380px;
-          width: 380px;
+          height: 350px;
+          width: 350px;
           border-radius: 50%;
           left: -16%;
           margin: 110px 0px 0px 0px;
