@@ -1,9 +1,9 @@
-@media only screen and (min-width: 362px) and ( max-width: 421px)  {
+@media only screen  and ( max-width: 440px)  {
 
 
     .box {
-      width: 250px; /**cambiar tamaño***/
-      height: 250px; /**cambiar tamaño***/
+      width: 30%; /**cambiar tamaño***/
+      height: 30%; /**cambiar tamaño***/
       display: flex;
       justify-content: center;
       align-items: center;
@@ -23,8 +23,8 @@
   
     .box-1 {
    
-      width: 250px; /**cambiar tamaño***/
-      height: 250px; /**cambiar tamaño***/
+      width: 30%; /**cambiar tamaño***/
+      height: 30%; /**cambiar tamaño***/
       display: flex;
       margin-left: 60px;
       justify-content: center;
@@ -35,8 +35,8 @@
   
     .box-2 {
       position: absolute;
-      width: 250px; /**cambiar tamaño***/
-      height: 250px; /**cambiar tamaño***/
+      width: 30%; /**cambiar tamaño***/
+      height: 30%; /**cambiar tamaño***/
       display: flex;
       justify-content: center;
       align-items: center;
@@ -44,8 +44,8 @@
     }
   
     .box-3 {
-      width: 250px; /**cambiar tamaño***/
-      height: 250px; /**cambiar tamaño***/
+      width: 30%; /**cambiar tamaño***/
+      height: 30%; /**cambiar tamaño***/
       display: flex;
       justify-content: center;
       align-items: center;

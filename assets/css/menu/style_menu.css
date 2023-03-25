@@ -191,7 +191,7 @@
     /*top: 60px;*/
     left: 0;
     width: 100%;
-    height: calc(100% - 60px);
+    height: calc(100% - 10px);
     overflow-y: auto;
     display: flex;
   }
@@ -294,7 +294,7 @@
     background-image: url(../../img/poland-flag-icon-32.png);
   }
 
-@media only screen and (max-width: 421px) {
+@media only screen and (max-width: 440px) {
 
 .selected-lang {
     display: flex;
