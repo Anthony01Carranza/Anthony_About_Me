@@ -216,7 +216,7 @@
     width: 200px; /**cambiar tamaño***/
     height: 200px; /**cambiar tamaño***/
     display: flex;
-    margin-left: 115px;
+    margin-left: 65px;
     justify-content: center;
     align-items: center;
     border-radius: 25px;
@@ -272,7 +272,7 @@
 }
 /*******************MEDIA GUERY 2 IPHONE****************************/
 
-@media only screen and (min-width: 362px) and ( max-width: 440px)  {
+@media only screen and (min-width: 400px) and ( max-width: 440px)  {
 
 
   .box {
