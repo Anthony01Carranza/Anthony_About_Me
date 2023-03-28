@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../../css/menu/style_menu.css" type="text/css"/>
     <link rel="stylesheet" href="../../css/menu/style_menu-es.css" type="text/css"/>
     <link rel="icon" type="image/png" href="../../img/cv.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
     <header id="master" >
@@ -58,7 +59,7 @@
     </header>
     <main>
         <section class="introduction_section">
-             <div class="cols cols0">
+             <div class="cols cols0" data-aos="fade-right" data-aos-delay="150" >
                 <span class="topline">Hola</span>
                 <h1>Soy <span class="multiText"></span></h1>
                 <p>Bienvenido a mi Portafolio como Desarrollador Web</p>
@@ -66,7 +67,7 @@
                     <button>Download CV</button>
                 </div> -->
             </div>
-           <div class="cols cols1">
+           <div class="cols cols1" data-aos="fade-left" data-aos-delay="150">
                 <div class="box-1">
                     <div class="box">
                         <div class="box-3">
@@ -80,9 +81,14 @@
     </main>
     <script src="../../js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     
     <script>
-        
+
+    AOS.init({
+        duration: 800,
+     });
+     
     var typingEffect = new Typed(".multiText",{
         strings : ["Anthony","Front End","Desarrollador","Junior"],
         loop : true,

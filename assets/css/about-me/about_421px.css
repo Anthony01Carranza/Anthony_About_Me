@@ -37,7 +37,7 @@
     .about-img-container {
         position: relative;
         place-self: center;
-        background: linear-gradient(#00E1FD, #7f00ff);
+        /*background: linear-gradient(#00E1FD, #7f00ff);*/
         width: 250px;
         height: 300px;
         border-radius: 150px;
@@ -54,6 +54,8 @@
         object-fit: cover;
         border-radius: 20px;
         margin: -1px 50px;
+        filter: drop-shadow(2px 2px 55px black);
+
     }
 
     skill-container {

@@ -141,7 +141,7 @@
   
   
   .cols{
-    padding-top: 36px;
+    padding-top: 77px;
     width: 100%;
 
   }
@@ -217,8 +217,8 @@
       .introduction_section::before{
           position: absolute;
           content: '';
-          height: 350px;
-          width: 350px;
+          height: 300px;
+          width: 300px;
           border-radius: 50%;
           left: -16%;
           margin: 110px 0px 0px 0px;
@@ -329,7 +329,7 @@
   
   
   .cols{
-    padding-top: 36px;
+    padding-top: 95px;
     width: 100%;
 
   }

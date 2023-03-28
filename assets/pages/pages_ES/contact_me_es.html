@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../../css/contact-me/contact_me_1200px.css" type="text/css" />
     <link rel="stylesheet" href="../../css/menu/style_menu-es.css" type="text/css" />
     <link rel="icon" type="image/png" href="../../img/cv.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
     <header id="master" >
@@ -60,12 +61,12 @@
     
     <main>
         <section class="contact-section active">
-        <div class="text_style">
+        <div class="text_style" data-aos="fade-right" data-aos-delay="150">
                 <h3 class="animate-charcter_con_es">Mi contacto</h3>
         </div>
 
 
-        <form action="https://formsubmit.co/b00f95f295c92a7979432f60affa68ec" method="POST" class="contact-form">
+        <form data-aos="fade-up" data-aos-delay="150" action="https://formsubmit.co/b00f95f295c92a7979432f60affa68ec" method="POST" class="contact-form">
             <input type="text" name="name" id="name" autocomplete="off" placeholder="nombre" required>
             <input type="text" name="email" id="email" autocomplete="off" placeholder="correo" required>
             <textarea name="msg" id="msg" placeholder="mensaje" autocomplete="off" required></textarea>
@@ -76,7 +77,7 @@
         
         <!-- map -->
         
-        <div class="data_to_share">
+        <div data-aos="fade-up" data-aos-delay="150" class="data_to_share">
             <a href="https://anthony01carranza.github.io/Anthony_About_Me/"><img class="logo_share" src="../../img/github.svg" ></img></a>
             <a href="https://www.linkedin.com/in/anthony-alexander-carranza-ramirez-6a77ab25a/"><img class="logo_share" src="../../img/link.png" ></img></a>
             <a href="https://wa.me/+48795042799?text=¡Estoy+interesado!"><img class="logo_share" src="../../img/whatsapp.svg" ></img></a>
@@ -107,5 +108,13 @@
     </main>
     
     <script src="../../js/app.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+
+    AOS.init({
+       duration: 800,
+    });
+    
+    </script>
 </body>
 </html>
